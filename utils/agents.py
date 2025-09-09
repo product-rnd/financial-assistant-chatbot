@@ -119,7 +119,7 @@ def get_pdf_document_agent(docs):
 
     loop = asyncio.new_event_loop()
     asyncio.set_event_loop(loop)
-    embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001",
+    embeddings = GoogleGenerativeAIEmbeddings(model="gemini-embedding-001",
                                             google_api_key=GOOGLE_API_KEY)
     
     vector_store = InMemoryVectorStore(embeddings)
